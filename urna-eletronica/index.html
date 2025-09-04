@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simulador de Urna Eletrônica para eleições de Deputado Federal no Brasil.">
+  <meta name="keywords" content="urna eletrônica, voto, eleições, deputado federal, Brasil">
+  <meta name="author" content="João Paulo">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <title>Urna Eletrônica</title>
+</head>
+
+<body>
+
+<div class="urna">
+  <div class="tela">
+    <h3>SEU VOTO PARA</h3>
+    <p>Deputado Federal</p>
+
+    <img src="img/lula.png" class="lula" alt="">
+
+    <div class="numeros-container">
+      <p id="n0">Número:</p>
+      <div class="numeros">
+        <div id="n1"></div>
+        <div id="n2"></div>
+      </div>
+    </div>
+
+    <div class="dados">
+      <p id="nome">Nome: </p>
+      <p id="partido">Partido: </p>
+    </div>
+    <p class="confira">CONFIRA O SEU VOTO</p>
+  </div>
+
+  <div class="teclado">
+    <div class="teclas">
+      <button onclick="digitar(1)">1</button>
+      <button onclick="digitar(2)">2</button>
+      <button onclick="digitar(3)">3</button>
+      <button onclick="digitar(4)">4</button>
+      <button onclick="digitar(5)">5</button>
+      <button onclick="digitar(6)">6</button>
+      <button onclick="digitar(7)">7</button>
+      <button onclick="digitar(8)">8</button>
+      <button onclick="digitar(9)">9</button>
+      <button onclick="digitar(0)">0</button>
+    </div>
+
+    <div class="acoes">
+      <button class="branco" onclick="votoBranco()">BRANCO</button>
+      <button class="corrige" onclick="corrige()">CORRIGE</button>
+      <button class="confirma" onclick="confirma()">CONFIRMA</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
